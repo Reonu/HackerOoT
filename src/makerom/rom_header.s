@@ -12,15 +12,12 @@
 
 #ifdef CONSOLE_WIIVC
 /* 0x3B */ MEDIUM(CARTRIDGE_EXPANDABLE)
-#else
-/* 0x3B */ MEDIUM(CARTRIDGE)
-#endif
-
 /* 0x3C */ GAME_ID("ZL")
 /* 0x3E */ REGION(US)
-
-#ifdef CONSOLE_WIIVC
 /* 0x3F */ GAME_REVISION(0)
 #else
+/* 0x3B */ MEDIUM(CARTRIDGE)
+/* 0x3C */ GAME_ID("ZL")
+/* 0x3E */ REGION(FREE)
 /* 0x3F */ GAME_REVISION(15)
 #endif
